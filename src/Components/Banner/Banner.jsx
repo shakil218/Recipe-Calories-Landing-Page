@@ -1,10 +1,11 @@
 const Banner = () => {
+
   return (
     <div>
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage: "url('../../public/banner.jpg')",
+          backgroundImage: "url('banner.jpg')",
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
@@ -14,9 +15,7 @@ const Banner = () => {
               Discover an exceptional cooking <br /> class tailored for you!
             </h1>
             <p className="mb-5 font-normal">
-              Learn and Master Basic Programming, Data Structures, Algorithm,
-              OOP, Database and solve 500+ coding <br /> problems to become an
-              exceptionally well world-class Programmer.
+            Discover the joy of cooking with our curated recipes! <br /> From comforting classics to exciting new flavors, there is something delicious waiting for you.
             </p>
             <div className=" flex justify-center gap-5">
               <button className="btn bg-[#0be58a] rounded-full border-none hover:bg-[#0be58a]">Explore Now</button>

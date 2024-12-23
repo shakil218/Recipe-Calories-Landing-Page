@@ -1,0 +1,160 @@
+[
+  {
+    "recipe_id": "1",
+    "recipe_name": "Basil Chicken with Mushrooms",
+    "recipe_image": "https://i.ibb.co.com/b2fh7CH/mashroom.jpg",
+    "description": "A flavorful and aromatic dish made with tender chicken, fresh basil, mushrooms, and soy sauce.",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g basil leaves",
+      "400 g mushrooms"
+    ],
+    "preparing_time": "30",
+    "calories": "320"
+  },
+  {
+    "recipe_id": "2",
+    "recipe_name": "Classic Spaghetti Bolognese",
+    "recipe_image": "https://i.ibb.co.com/BrcpSNM/Classic-Spaghetti-Bolognese.jpg",
+    "description": "A classic Italian pasta dish with rich and hearty Bolognese sauce.",
+    "ingredients": [
+      "300 g spaghetti",
+      "500 g ground beef",
+      "400 g canned tomatoes",
+      "2 cloves garlic",
+      "1 onion",
+      "50 g Parmesan cheese",
+      "2 tbsp olive oil"
+    ],
+    "preparing_time": "45",
+    "calories": "400"
+  },
+  {
+    "recipe_id": "3",
+    "recipe_name": "Vegetarian Buddha Bowl",
+    "recipe_image": "https://i.ibb.co.com/7b8ZHMj/Vegetarian-Buddha-Bowl.jpg",
+    "description": "A healthy and colorful bowl filled with fresh vegetables, grains, and a creamy tahini dressing.",
+    "ingredients": [
+      "200 g quinoa",
+      "150 g chickpeas",
+      "1 avocado",
+      "100 g spinach",
+      "50 g cherry tomatoes",
+      "2 tbsp tahini",
+      "1 lemon"
+    ],
+    "preparing_time": "25",
+    "calories": "300"
+  },
+  {
+    "recipe_id": "4",
+    "recipe_name": "Grilled Salmon with Asparagus",
+    "recipe_image": "https://i.ibb.co.com/ph8Xztm/Grilled-Salmon-with-Asparagus.jpg",
+    "description": "A simple yet elegant dish featuring grilled salmon and tender asparagus.",
+    "ingredients": [
+      "2 salmon fillets",
+      "300 g asparagus",
+      "2 tbsp olive oil",
+      "1 lemon",
+      "Salt and pepper"
+    ],
+    "preparing_time": "20",
+    "calories": "350"
+  },
+  {
+    "recipe_id": "5",
+    "recipe_name": "Margherita Pizza",
+    "recipe_image": "https://i.ibb.co.com/2Zj6pNj/Margherita-Pizza.jpg",
+    "description": "A classic Italian pizza topped with fresh mozzarella, tomatoes, and basil leaves.",
+    "ingredients": [
+      "1 pizza dough",
+      "200 g mozzarella cheese",
+      "3 fresh tomatoes",
+      "50 g basil leaves",
+      "2 tbsp olive oil"
+    ],
+    "preparing_time": "40",
+    "calories": "380"
+  },
+  {
+    "recipe_id": "6",
+    "recipe_name": "Caesar Salad",
+    "recipe_image": "https://i.ibb.co.com/dLmDGrZ/Caesar-Salad.jpg",
+    "description": "A fresh and crunchy salad with Romaine lettuce, Parmesan, and creamy Caesar dressing.",
+    "ingredients": [
+      "200 g Romaine lettuce",
+      "50 g croutons",
+      "30 g Parmesan cheese",
+      "50 ml Caesar dressing",
+      "1 boiled egg"
+    ],
+    "preparing_time": "15",
+    "calories": "250"
+  },
+  {
+    "recipe_id": "7",
+    "recipe_name": "Chocolate Brownies",
+    "recipe_image": "https://i.ibb.co.com/jwPd3fW/Chocolate-Brownies.jpg",
+    "description": "Rich and gooey chocolate brownies, perfect as a dessert or snack.",
+    "ingredients": [
+      "200 g dark chocolate",
+      "150 g sugar",
+      "100 g butter",
+      "2 eggs",
+      "100 g flour",
+      "50 g cocoa powder"
+    ],
+    "preparing_time": "35",
+    "calories": "450"
+  },
+  {
+    "recipe_id": "8",
+    "recipe_name": "Thai Green Curry",
+    "recipe_image": "https://i.ibb.co.com/kGwQyVj/Thai-Green-Curry.jpg",
+    "description": "A spicy and fragrant Thai green curry with chicken and vegetables.",
+    "ingredients": [
+      "500 g chicken",
+      "200 ml coconut milk",
+      "100 g green curry paste",
+      "100 g green beans",
+      "1 red bell pepper",
+      "1 tbsp fish sauce"
+    ],
+    "preparing_time": "40",
+    "calories": "370"
+  },
+  {
+    "recipe_id": "9",
+    "recipe_name": "French Toast",
+    "recipe_image": "https://i.ibb.co.com/jwZcf6x/French-Toast.jpg",
+    "description": "Classic French toast served with fresh fruits and maple syrup.",
+    "ingredients": [
+      "4 slices bread",
+      "2 eggs",
+      "100 ml milk",
+      "1 tbsp butter",
+      "1 tbsp sugar",
+      "Maple syrup and fruits (optional)"
+    ],
+    "preparing_time": "15",
+    "calories": "280"
+  },
+  {
+    "recipe_id": "10",
+    "recipe_name": "Vegetable Fried Rice",
+    "recipe_image": "https://i.ibb.co.com/gVnRxcw/Vegetable-Fried-Rice.jpg",
+    "description": "A quick and flavorful fried rice loaded with vegetables.",
+    "ingredients": [
+      "200 g cooked rice",
+      "100 g peas",
+      "100 g carrots",
+      "50 g spring onions",
+      "2 tbsp soy sauce",
+      "2 eggs",
+      "1 tbsp sesame oil"
+    ],
+    "preparing_time": "20",
+    "calories": "320"
+  }
+]
