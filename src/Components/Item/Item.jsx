@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { LuClock3 } from "react-icons/lu";
 import { BsFire } from "react-icons/bs";
 const Item = ({ recipe }) => {
@@ -11,7 +12,7 @@ const Item = ({ recipe }) => {
   } = recipe;
 
   return (
-    <div className="flex m-5">
+    <div className="flex m-5 border border-gray-200 rounded-xl">
       <div className="card bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img src={recipe_image} alt={recipe_name} className="rounded-xl" />
@@ -54,5 +55,9 @@ const Item = ({ recipe }) => {
     </div>
   );
 };
+
+Item.propTypes = {
+  recipe: PropTypes.func
+}
 
 export default Item;

@@ -1,3 +1,4 @@
+import Cooklist from "../Cooklist/Cooklist";
 import Recipe from "../Recipe/Recipe";
 
 const Recipes = () => {
@@ -16,6 +17,7 @@ const Recipes = () => {
       </div>
       <div className="flex">
         <Recipe></Recipe>
+        <Cooklist></Cooklist>
       </div>
     </>
   );
