@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import { LuClock3 } from "react-icons/lu";
 import { BsFire } from "react-icons/bs";
-const Item = ({ recipe }) => {
+
+const Item = ({ recipe , handleCook}) => {
   const {
     recipe_image,
     recipe_name,
@@ -12,7 +13,7 @@ const Item = ({ recipe }) => {
   } = recipe;
 
   return (
-    <div className="flex m-5 border border-gray-200 rounded-xl">
+    <div className="flex my-5 md:mr-5 border border-gray-200 rounded-xl">
       <div className="card bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img src={recipe_image} alt={recipe_name} className="rounded-xl" />
@@ -46,7 +47,7 @@ const Item = ({ recipe }) => {
           </div>
 
           <div className="card-actions">
-            <button className="btn bg-[#0be58a] rounded-full border-none hover:bg-[#0be58a]">
+            <button className="btn bg-[#0be58a] rounded-full border-none hover:bg-[#0be58a]" onClick={()=>handleCook(recipe)}>
               Want to Cook
             </button>
           </div>
@@ -57,7 +58,8 @@ const Item = ({ recipe }) => {
 };
 
 Item.propTypes = {
-  recipe: PropTypes.func
+  recipe:PropTypes.object,
+  handleCook:PropTypes.func
 }
 
 export default Item;

@@ -1,8 +1,16 @@
+import { useState } from "react";
 import Cooklist from "../Cooklist/Cooklist";
 import Recipe from "../Recipe/Recipe";
 
 const Recipes = () => {
-  
+  const [cookLists, setCookLists] = useState([]);
+
+  const handleCook = (recipe) => {
+    // console.log(recipe);
+    const newCookLists = [...cookLists, recipe];
+    setCookLists(newCookLists);
+  };
+
   return (
     <>
       <div className="flex justify-center text-center my-12">
@@ -15,9 +23,9 @@ const Recipes = () => {
           </p>
         </div>
       </div>
-      <div className="flex">
-        <Recipe></Recipe>
-        <Cooklist></Cooklist>
+      <div className="md:flex">
+        <Recipe handleCook={handleCook}></Recipe>
+        <Cooklist cookLists={cookLists}></Cooklist>
       </div>
     </>
   );

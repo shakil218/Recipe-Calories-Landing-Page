@@ -1,29 +1,35 @@
-import PreparedCookList from "../PreparedCookList/PreparedCookList";
+import { useState } from "react";
 import WantsToCookList from "../WantsToCookList/WantsToCookList";
+import PropTypes from "prop-types";
+import PreparedCookList from "../PreparedCookList/PreparedCookList";
 
-const Cooklist = () => {
+const Cooklist = ({ cookLists }) => {
+  const [preparedCookList, setPreparedCookList] = useState([]);
+
+  const handlePreparedCookList = (cookList) => {
+    const newPreparedCookList = [...preparedCookList, cookList];
+    setPreparedCookList(newPreparedCookList);
+    // console.log(preparedCookList);
+  };
+
   return (
-    <div className="w-1/3 my-5 ml-5 border border-gray-200 rounded-xl">
+    <div className="md:w-1/3 my-5  border border-gray-200 rounded-xl">
       <div>
-        <WantsToCookList></WantsToCookList>
+        <WantsToCookList
+          cookLists={cookLists}
+          handlePreparedCookList={handlePreparedCookList}
+        ></WantsToCookList>
       </div>
       <div>
-        <PreparedCookList></PreparedCookList>
-        <div>
-          <table className="table ">
-            <tbody>
-              <tr className="flex justify-end items-end ">
-                <td>Total Time = <br />
-                  45 minutes</td>
-                <td>Total Calories = <br />
-                  1050 calories</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <PreparedCookList
+          preparedCookList={preparedCookList}
+        ></PreparedCookList>
       </div>
     </div>
   );
 };
 
+Cooklist.propTypes = {
+  cookLists: PropTypes.array,
+};
 export default Cooklist;
