@@ -5,11 +5,18 @@ import PreparedCookList from "../PreparedCookList/PreparedCookList";
 
 const Cooklist = ({ cookLists }) => {
   const [preparedCookList, setPreparedCookList] = useState([]);
+  const [times, setTimes] = useState(0);
+  const [calories, setCalories] = useState(0);
 
-  const handlePreparedCookList = (cookList) => {
+  const handlePreparedCookList = (cookList, time, Calories) => {
     const newPreparedCookList = [...preparedCookList, cookList];
     setPreparedCookList(newPreparedCookList);
-    // console.log(preparedCookList);
+    
+    const totalTimes = parseFloat(times) + parseFloat(time)
+    setTimes(totalTimes)
+    
+    const totalCalories = parseFloat(calories) + parseFloat(Calories)
+    setCalories(totalCalories)
   };
 
   return (
@@ -24,6 +31,28 @@ const Cooklist = ({ cookLists }) => {
         <PreparedCookList
           preparedCookList={preparedCookList}
         ></PreparedCookList>
+      </div>
+      <div>
+        <table className="table ">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="flex justify-end items-end font-bold">
+              <td>
+                Total Time = <br />
+                {times} minutes
+              </td>
+              <td>
+                Total Calories = <br />
+                {calories} calories
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

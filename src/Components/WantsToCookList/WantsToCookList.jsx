@@ -26,7 +26,7 @@ const WantsToCookList = ({ cookLists , handlePreparedCookList }) => {
                 <td>{cookList.preparing_time} minutes</td>
                 <td>{cookList.calories} calories</td>
                 <td>
-                  <button onClick={()=>handlePreparedCookList(cookList)} className="btn bg-[#0be58a] rounded-full border-none hover:bg-[#0be58a]">
+                  <button onClick={()=>handlePreparedCookList(cookList , cookList.preparing_time , cookList.calories)} className="btn bg-[#0be58a] rounded-full border-none hover:bg-[#0be58a]">
                     Preparing
                   </button>
                 </td>
