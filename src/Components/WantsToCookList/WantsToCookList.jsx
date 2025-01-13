@@ -13,6 +13,7 @@ const WantsToCookList = ({ cookLists , handlePreparedCookList }) => {
         <table className="table">
           <thead>
             <tr>
+              <th></th>
               <th>Name</th>
               <th>Time</th>
               <th>Calories</th>
@@ -20,8 +21,9 @@ const WantsToCookList = ({ cookLists , handlePreparedCookList }) => {
             </tr>
           </thead>
           <tbody>
-            {cookLists.map((cookList) => (
-              <tr key={cookList.index}>
+            {cookLists.map((cookList , index) => (
+              <tr key={index}>
+                <td>{index + 1}</td>
                 <td>{cookList.recipe_name}</td>
                 <td>{cookList.preparing_time} minutes</td>
                 <td>{cookList.calories} calories</td>
